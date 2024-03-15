@@ -1,0 +1,29 @@
+{
+    "name": "local-llm-chatbot",
+    "version": "1.0.0",
+    "description": "An LLM chatbot that allows the user to use their own local LLM",
+    "main": "server/index.ts",
+    "scripts": {
+        "start": "bun server/run_express.ts",
+        "dev": "bun i && bun --watch server/index.ts"
+    },
+    "dependencies": {
+        "bun": "latest",
+        "express": "latest",
+        "socket.io": "latest",
+        "sqlite3": "latest",
+        "react": "latest",
+        "react-dom": "latest",
+        "socket.io-client": "latest",
+        "esbuild": "latest",
+        "cookie-parser": "latest"
+    },
+    "devDependencies": {
+        "@types/express": "latest",
+        "@types/react": "latest",
+        "@types/react-dom": "latest",
+        "@types/socket.io": "latest",
+        "@types/socket.io-client": "latest",
+        "esbuild": "latest"
+    }
+}
