@@ -1,36 +1,18 @@
+This is a [LlamaIndex](https://www.llamaindex.ai/) project bootstrapped with [`create-llama`](https://github.com/run-llama/LlamaIndexTS/tree/main/packages/create-llama).
 
-# Local LLM Chatbot
+## Getting Started
 
-This is a full-stack TypeScript app for an LLM chatbot that allows the user to use their own local LLM. 
+First, startup the backend as described in the [backend README](./backend/README.md).
 
-## Routes
-- `/`: Serves the main React app
-- `/api/chat`: POST endpoint for sending a chat message and getting a response from the local LLM
-- `/api/models`: GET endpoint for retrieving the list of available local LLM models
+Second, run the development server of the frontend as described in the [frontend README](./frontend/README.md).
 
-## Libraries Used
-- Backend:
-  - express
-  - sqlite3 
-  - socket.io
-- Frontend:  
-  - react
-  - react-dom
-  - socket.io-client
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Running the App
+## Learn More
 
-To run the app, simply execute:
+To learn more about LlamaIndex, take a look at the following resources:
 
-```
-bun server/run.ts // doesn't work - do below command
-```
+- [LlamaIndex Documentation](https://docs.llamaindex.ai) - learn about LlamaIndex (Python features).
+- [LlamaIndexTS Documentation](https://ts.llamaindex.ai) - learn about LlamaIndex (Typescript features).
 
-```
-bun run dev
-```
-
-This will start the server on port 8001. Open http://localhost:8001 in your browser to use the chatbot.
-
-The app uses SQLite for storing chat history. Socket.io is used for real-time updates between the client and server.
-
+You can check out [the LlamaIndexTS GitHub repository](https://github.com/run-llama/LlamaIndexTS) - your feedback and contributions are welcome!
